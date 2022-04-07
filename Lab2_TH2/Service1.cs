@@ -35,7 +35,6 @@ namespace Lab2_TH2
         private void OnElapsedTime(object source, ElapsedEventArgs e)
         {
             WriteToFile("Service is recall at " + DateTime.Now);
-            //Lấy danh sách các process bằng GetProcesses()
             Process[] lProcess = Process.GetProcessesByName("notepad");
             if (lProcess==null)
             {
